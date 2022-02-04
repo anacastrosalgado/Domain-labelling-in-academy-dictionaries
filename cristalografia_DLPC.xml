@@ -1,0 +1,37 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+    
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLPC.cristalografia">
+    <form type="lemma">
+        <orth>cristalografia</orth>
+        <pron>kriʃtɐluɡrɐˈfiɐ</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">n.</gram>
+        <gram type="gen">f.</gram>
+    </gramGrp>
+    <sense xml:id="DLPC.cristalografia_1">
+        <usg type="domain">Mineralogia</usg>
+        <def>ciência que estuda e descreve a forma e a estrutura dos cristais, bem como as leis que regem a sua formação</def>
+    </sense>
+    <etym>
+        <etym type="inheritance">
+            <seg type="desc">Do grego</seg>
+            <cit type="etymon" xml:lang="grc">
+                <form><orth>κρύσταλλος</orth></form>
+                <pc>,</pc>
+                <pc>'</pc>
+                <gloss>cristal</gloss>
+                <pc>'</pc>
+            </cit>
+        </etym>
+        <metamark>+</metamark>
+            <etym type="grammaticalization">
+                <seg type="desc">sufixo</seg>
+                <cit type="etymon" xml:lang="pt">
+                    <form>
+                        <orth extent="suf">-grafia</orth>
+                    </form>
+                </cit>
+            </etym>
+    </etym>
+</entry>

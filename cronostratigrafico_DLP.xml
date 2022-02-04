@@ -1,0 +1,43 @@
+<?xml-model href="http://dacl.zbr.pt/exist/rest/db/schemas/academia.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<!--This example shows the encoding of a polylexical term as a cross-reference-->
+<entry xmlns="http://www.tei-c.org/ns/1.0" type="monolexicalUnit" xml:lang="pt" xml:id="DLP.cronostratigrafico">
+    <form type="lemma">
+        <orth>cronostratigráfico</orth>
+        <pron>krɔnɔʃtrɐtiˈɡrafiku</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="ADJ">adj.</gram>
+    </gramGrp>
+    <sense xml:id="DLP.cronostratigrafico_1">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <def>relativo ou pertencente à cronostratigrafia</def>
+    </sense>
+    <sense xml:id="DLP.cronostratigrafico_2">
+        <entry xml:id="unidade_cronostratigrafica" xml:lang="pt" type="relatedEntry">
+            <form type="lemma">
+                <orth>
+                    <ref type="entry"><seg>unidade</seg></ref>
+                    <seg>cronostratigráfica</seg>
+                </orth>
+            </form>
+        </entry>  
+    </sense>
+    <etym type="grammaticalization">
+        <seg type="desc">De</seg>
+        <cit type="etymon" xml:lang="pt">
+            <form>
+                <orth extent="pref">crono-</orth>
+            </form>
+        </cit>
+    </etym>
+    <etym type="grammaticalization">
+        <metamark>+</metamark>
+        <cit type="etymon" xml:lang="pt">
+            <form>
+                <orth>estratigráfico</orth>
+            </form>
+        </cit>
+    </etym>
+</entry>
+

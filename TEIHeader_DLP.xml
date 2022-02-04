@@ -1,0 +1,140 @@
+<?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/master/Schemas/TEILex0/out/TEILex0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>Dicionário da Língua Portuguesa</title>
+            <title type="abbr">DLP</title>
+        </titleStmt>
+        <editionStmt>
+            <edition>
+                <title>XML encoded version</title>
+                <date>December 2021</date>
+            </edition>
+        </editionStmt>
+        <publicationStmt>
+            <publisher>Academia das Ciências de Lisboa</publisher>
+            <publisher>Instituto de Lexicologia e Lexicografia da Língua Portuguesa</publisher>
+            <pubPlace>Lisboa</pubPlace>
+            <date>2021-2022</date>
+            <availability>
+                <licence>Copyright Academia das Ciências de Lisboa</licence>
+            </availability>     
+        </publicationStmt>
+        <sourceDesc>
+         
+            <biblStruct>
+                <monogr>
+                    <imprint>
+                        <publisher>Imprensa Nacional de Lisboa</publisher>
+                        <date>1940</date>
+                    </imprint>
+                </monogr>
+            </biblStruct>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <classDecl>
+            <taxonomy xml:id="domain">
+                <category xml:id="domain.earth_sciences">
+                    <catDesc xml:lang="en">Earth Sciences</catDesc>
+                    <catDesc xml:lang="pt">Ciências da Terra</catDesc>
+                    <catDesc xml:lang="es">Ciencias de la Tierra</catDesc>
+                    <catDesc xml:lang="fr">sciences de la Terre </catDesc>
+                    <category xml:id="domain.earth_sciences.geology">
+                        <catDesc xml:lang="en">Geology</catDesc>
+                        <catDesc xml:lang="pt">Geologia</catDesc>
+                        <catDesc xml:lang="es">Geología</catDesc>
+                        <catDesc xml:lang="fr">Geologie</catDesc>
+                        <category xml:id="domain.earth_sciences.geology.mineralogy">
+                            <catDesc xml:lang="en">Mineralogy</catDesc>
+                            <catDesc xml:lang="pt">Mineralogia</catDesc>
+                            <catDesc xml:lang="es">Mineralogía</catDesc>
+                            <catDesc xml:lang="fr">Mineralogie</catDesc>
+                        </category>
+                    </category>
+                </category>
+                        <category xml:id="domain.sports">
+                            <catDesc xml:lang="en">Sport</catDesc>
+                            <catDesc xml:lang="pt">Desporto</catDesc>
+                            <catDesc xml:lang="es">Deporte</catDesc>
+                            <catDesc xml:lang="fr">Sport</catDesc>
+                            <category xml:id="domain.sports.football">
+                                <catDesc xml:lang="en">Football</catDesc>
+                                <catDesc xml:lang="pt">Futebol</catDesc>
+                                <catDesc xml:lang="es">Fútebol</catDesc>
+                                <catDesc xml:lang="fr">Football</catDesc>
+                            </category>
+                        </category>
+            </taxonomy>
+        </classDecl>
+    </encodingDesc>
+    <profileDesc>
+        <langUsage>
+            <language role="objectLanguage" ident="pt"></language>
+        </langUsage>
+    </profileDesc>
+</teiHeader>
+    <text>
+        <body>
+            <entry type="monolexicalUnit" xml:lang="pt" xml:id="DLP.eon">
+    <form type="lemma">
+        <orth>éon</orth>
+        <pron>ˈɛɔn</pron>
+    </form>
+    <gramGrp>
+        <gram type="pos" norm="NOUN">nome</gram>
+        <gram type="gen">masculino</gram>
+    </gramGrp>
+    <sense n="1" xml:id="DLP-eon_1">
+        <def>divisão de tempo infinitamente longa</def>
+    </sense>
+    <sense xml:id="DLP-eon_2" n="2">
+        <usg type="domain">Filos.</usg>
+        <def>espírito que emana da inteligência eterna</def>
+    </sense>
+    <sense xml:id="DLP-eon_3" n="3">
+        <usg type="domain" corresp="#domain.earth_sciences.geology.stratigraphy"/>
+        <usg type="domain">Geologia</usg>
+        <def>intervalo de tempo geológico<xr>
+            <ref type="entry">(unidade geocronológica)</ref>
+        </xr>durante o qual se formou um eonotema<xr>
+            <ref type="entry">(unidade cronostratigráfica)</ref>
+        </xr></def>
+        <form type="collocations">
+            <form type="collocation">
+                <orth>
+                    <ref type="oRef">
+                        <lbl>+</lbl>
+                    </ref>
+                    <seg>éon fanerozoico</seg>
+                </orth>
+                <gramGrp>
+                    <gram type="mwe" value="co-ocorrente_privilegiado"/>
+                </gramGrp>
+            </form>
+        </form>
+        <note type="enciclopedic">1) Na escala do tempo geológico, o éon é a categoria hierárquica
+            mais elevada. 2) O éon integra várias eras.</note>
+    </sense>
+    <etym>
+        <etym type="inheritance">
+            <!--SEE-->
+            <seg type="desc">Do latim médio</seg>
+            <cit type="etymon" xml:lang="la">
+                <form><orth>aeon</orth></form>
+            </cit>
+            <seg type="desc">pelo grego</seg>
+            <cit type="etymon" xml:lang="grc">
+                <form><orth>ἀίων</orth></form>
+                <pc>'</pc>
+                <gloss>eternidade</gloss>
+                <pc>'</pc>
+            </cit>
+        </etym>
+    </etym>
+    <note type="plural">Plural: éones</note>
+</entry>
+    </body>
+    </text>
+</TEI>
